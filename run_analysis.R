@@ -72,4 +72,4 @@ tidy_data_set<-summarise_each(inter_data,funs(mean))
 #Save the tidy data set in the working directory in a Tab delimited text file
 path_test3<-file.path("C:/Users/marie/Desktop/Data science/Week4/project")
 setwd(path_test3)
-write.table(tidy_data_set, "./tidy_data_set.txt", sep="\t")
+write.table(tidy_data_set, "./tidy_data_set.txt", sep="\t",row.names = F)
