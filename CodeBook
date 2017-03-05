@@ -1,0 +1,105 @@
+Codebook for run_analysis script
+
+Variables names and position:
+
+"1"	"subject"
+"2"	"activity"
+"3"	"TimeBodyAccelerometerMean()AxisX"
+"4"	"TimeBodyAccelerometerMean()AxisY"
+"5"	"TimeBodyAccelerometerMean()AxisZ"
+"6"	"TimeGravityAccelerometerMean()AxisX"
+"7"	"TimeGravityAccelerometerMean()AxisY"
+"8"	"TimeGravityAccelerometerMean()AxisZ"
+"9"	"TimeBodyAccelerometerJerkMean()AxisX"
+"10"	"TimeBodyAccelerometerJerkMean()AxisY"
+"11"	"TimeBodyAccelerometerJerkMean()AxisZ"
+"12"	"TimeBodyGyroscopeMean()AxisX"
+"13"	"TimeBodyGyroscopeMean()AxisY"
+"14"	"TimeBodyGyroscopeMean()AxisZ"
+"15"	"TimeBodyGyroscopeJerkMean()AxisX"
+"16"	"TimeBodyGyroscopeJerkMean()AxisY"
+"17"	"TimeBodyGyroscopeJerkMean()AxisZ"
+"18"	"TimeBodyAccelerometerEuclideanNormMean()"
+"19"	"TimeGravityAccelerometerEuclideanNormMean()"
+"20"	"TimeBodyAccelerometerJerkEuclideanNormMean()"
+"21"	"TimeBodyGyroscopeEuclideanNormMean()"
+"22"	"TimeBodyGyroscopeJerkEuclideanNormMean()"
+"23"	"FastFourierTransformAccelerometerMean()AxisX"
+"24"	"FastFourierTransformAccelerometerMean()AxisY"
+"25"	"FastFourierTransformAccelerometerMean()AxisZ"
+"26"	"FastFourierTransformAccelerometerMeanFreq()AxisX"
+"27"	"FastFourierTransformAccelerometerMeanFreq()AxisY"
+"28"	"FastFourierTransformAccelerometerMeanFreq()AxisZ"
+"29"	"FastFourierTransformAccelerometerJerkMean()AxisX"
+"30"	"FastFourierTransformAccelerometerJerkMean()AxisY"
+"31"	"FastFourierTransformAccelerometerJerkMean()AxisZ"
+"32"	"FastFourierTransformAccelerometerJerkMeanFreq()AxisX"
+"33"	"FastFourierTransformAccelerometerJerkMeanFreq()AxisY"
+"34"	"FastFourierTransformAccelerometerJerkMeanFreq()AxisZ"
+"35"	"FastFourierTransformGyroscopeMean()AxisX"
+"36"	"FastFourierTransformGyroscopeMean()AxisY"
+"37"	"FastFourierTransformGyroscopeMean()AxisZ"
+"38"	"FastFourierTransformGyroscopeMeanFreq()AxisX"
+"39"	"FastFourierTransformGyroscopeMeanFreq()AxisY"
+"40"	"FastFourierTransformGyroscopeMeanFreq()AxisZ"
+"41"	"FastFourierTransformAccelerometerEuclideanNormMean()"
+"42"	"FastFourierTransformAccelerometerEuclideanNormMeanFreq()"
+"43"	"FastFourierTransformBodyAccelerometerJerkEuclideanNormMean()"
+"44"	"FastFourierTransformBodyAccelerometerJerkEuclideanNormMeanFreq()"
+"45"	"FastFourierTransformBodyGyroscopeEuclideanNormMean()"
+"46"	"FastFourierTransformBodyGyroscopeEuclideanNormMeanFreq()"
+"47"	"FastFourierTransformBodyGyroscopeJerkEuclideanNormMean()"
+"48"	"FastFourierTransformBodyGyroscopeJerkEuclideanNormMeanFreq()"
+"49"	"TimeBodyAccelerometerStandardDev()AxisX"
+"50"	"TimeBodyAccelerometerStandardDev()AxisY"
+"51"	"TimeBodyAccelerometerStandardDev()AxisZ"
+"52"	"TimeGravityAccelerometerStandardDev()AxisX"
+"53"	"TimeGravityAccelerometerStandardDev()AxisY"
+"54"	"TimeGravityAccelerometerStandardDev()AxisZ"
+"55"	"TimeBodyAccelerometerJerkStandardDev()AxisX"
+"56"	"TimeBodyAccelerometerJerkStandardDev()AxisY"
+"57"	"TimeBodyAccelerometerJerkStandardDev()AxisZ"
+"58"	"TimeBodyGyroscopeStandardDev()AxisX"
+"59"	"TimeBodyGyroscopeStandardDev()AxisY"
+"60"	"TimeBodyGyroscopeStandardDev()AxisZ"
+"61"	"TimeBodyGyroscopeJerkStandardDev()AxisX"
+"62"	"TimeBodyGyroscopeJerkStandardDev()AxisY"
+"63"	"TimeBodyGyroscopeJerkStandardDev()AxisZ"
+"64"	"TimeBodyAccelerometerEuclideanNormStandardDev()"
+"65"	"TimeGravityAccelerometerEuclideanNormStandardDev()"
+"66"	"TimeBodyAccelerometerJerkEuclideanNormStandardDev()"
+"67"	"TimeBodyGyroscopeEuclideanNormStandardDev()"
+"68"	"TimeBodyGyroscopeJerkEuclideanNormStandardDev()"
+"69"	"FastFourierTransformAccelerometerStandardDev()AxisX"
+"70"	"FastFourierTransformAccelerometerStandardDev()AxisY"
+"71"	"FastFourierTransformAccelerometerStandardDev()AxisZ"
+"72"	"FastFourierTransformAccelerometerJerkStandardDev()AxisX"
+"73"	"FastFourierTransformAccelerometerJerkStandardDev()AxisY"
+"74"	"FastFourierTransformAccelerometerJerkStandardDev()AxisZ"
+"75"	"FastFourierTransformGyroscopeStandardDev()AxisX"
+"76"	"FastFourierTransformGyroscopeStandardDev()AxisY"
+"77"	"FastFourierTransformGyroscopeStandardDev()AxisZ"
+"78"	"FastFourierTransformAccelerometerEuclideanNormStandardDev()"
+"79"	"FastFourierTransformBodyAccelerometerJerkEuclideanNormStandardDev()"
+"80"	"FastFourierTransformBodyGyroscopeEuclideanNormStandardDev()"
+"81"	"FastFourierTransformBodyGyroscopeJerkEuclideanNormStandardDev()"
+
+Script description/
+
+The purpose of the run_analysis script is to tidy and clean the data from the Human Recognition Samrtphone data set, to make it easy
+to use for future data analysis.
+
+The script works as follow:
+1.Download the zip file from the given link
+2.Merge all the test files together using cbind
+3.Merge all the trazin files together usind cbind
+4.Merge the resulting test and train files together using rbind in order to btain a complete data frame with all the raw data.
+5.Name the columns in the resulting dataframe with the correct variables names: "subject", "activity" and the variables from the 
+"feature.txt" file.
+6.Crate a new data frame with only the mean and standard deviation variables (since the instruction is ambiguous, the mean 
+frequency variables have been included, as it is not specified if a specific kind of mean should be selected or all of them). Identify
+All columns with mean or std in their name then loop to include them in the new data frame.
+7.Replace the numbers in the activity column by their description.
+8.Rewrite the variables' names to make them more descriptive and therefore easier to understand.
+9.Group the final data frame by activity and subject, using group_by in the dplyr package
+10. Calculate the mean for each variable, for each subject by activity and store the resulting data in a tidy_data_set.txt file
